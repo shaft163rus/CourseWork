@@ -17,19 +17,25 @@ public class Main {
         em.printEmployees();
 
         System.out.println();
+
+
         em.deleteEmployeeById(5);
         em.changeSalaryByName("two", 8900);
         em.changeDepartmentByName("nine", 3);
+        System.out.println("Total salary: " + em.getTotalSalary());
+        em.printAverageSalary();
+        em.printEmployeeWithMaxSalary();
+        em.printEmployeeWithMinSalary();
+        em.printEmployeeWithMaxSalary(3);
+        em.printEmployeeWithMinSalary(1);
 
 
         System.out.println();
+
         em.printEmployees();
 
-//        em.deleteEmployeeById(7);
-//        em.addEmployee("TEST SEVEN", 4, 88888);
-//
-//        em.deleteEmployeeByName("nine");
-//        em.addEmployee("TEST NINE", 4, 99999);
+
+
 
 
 

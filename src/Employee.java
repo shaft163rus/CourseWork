@@ -42,4 +42,8 @@ public class Employee {
         this.salary = salary;
     }
 
+    public void printEmployee() {
+        System.out.printf("id: %d ,FullName: %s; Department: %d; Salary: %d\n", id, this.getFullName(), this.getDepartment(), this.getSalary());
+    }
+
 }
