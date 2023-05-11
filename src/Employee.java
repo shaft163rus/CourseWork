@@ -1,11 +1,13 @@
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Employee {
-    public static final AtomicInteger COUNTER = new AtomicInteger(1);
+    private static final AtomicInteger COUNTER = new AtomicInteger(1);
     private final int id;
     private String fullName;
     private int department;
     private int salary;
+
+ 
 
     public Employee(String fullName, int department, int salary) {
         this.fullName = fullName;
@@ -42,8 +44,9 @@ public class Employee {
         this.salary = salary;
     }
 
-    public void printEmployee() {
-        System.out.printf("id: %d ,FullName: %s; Department: %d; Salary: %d\n", id, this.getFullName(), this.getDepartment(), this.getSalary());
-    }
+
+
+
+
 
 }
